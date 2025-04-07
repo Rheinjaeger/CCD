@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 from PIL import Image, ImageTk
-import os
 
 # Import from FakeImage
 from FakeImage import generate_fake_image, send_image
