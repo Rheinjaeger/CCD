@@ -4,7 +4,7 @@ import socket
 
 
 # Image Size
-WIDTH, HEIGHT = 2048, 512
+WIDTH, HEIGHT = 1024, 1024
 
 # Function to generate a fake image
 def generate_fake_image():

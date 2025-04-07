@@ -4,7 +4,7 @@ from PIL import Image
 
 DEF_PORT = 40020
 BUFFER_SIZE = 1024
-WIDTH, HEIGHT = 2048, 512
+WIDTH, HEIGHT = 1024, 1024
 
 logging.basicConfig(
     level=logging.INFO,
