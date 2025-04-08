@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets, QtGui, QtCore
+from PyQt6 import QtWidgets, QtGui, QtCore
 import sys
 
 class CCDControlGUI(QtWidgets.QWidget):
@@ -54,4 +54,4 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     gui = CCDControlGUI()
     gui.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
