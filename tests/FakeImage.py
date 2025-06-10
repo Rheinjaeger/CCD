@@ -11,7 +11,7 @@ def generate_fake_image():
     # Generate random pixel values (grayscale, 8-bit per pixel)
     image_data = np.random.randint(0, 256, (HEIGHT, WIDTH), dtype=np.uint8)
     image = Image.fromarray(image_data, mode='L')  # L mode for grayscale
-    image.save("fake_image.png")  # Save image
+    #image.save("fake_image.png")  # Save image
     return image_data
 
 # Function to send image data over Ethernet (TCP)
