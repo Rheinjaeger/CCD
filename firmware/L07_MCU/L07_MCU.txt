@@ -1,0 +1,110 @@
+Configuration	L07_MCU
+STM32CubeMX 	6.15.0
+Date	09/10/2025
+MCU	STM32L073RZTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN3	ADC_IN3	PA3
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+14	PA0	GPIO_Output	PreAmp_Out
+15	PA1	GPIO_Output	ADC_Select
+17	PA3	ADC_IN3	Temp_2
+20	PA4	GPIO_Output	Ethernet_CE
+21	PA5*	SPI1_SCK	Ethernet_SCLK
+22	PA6*	SPI1_MISO	Ethernet_MISO
+23	PA7*	SPI1_MOSI	Ethernet_MOSI
+26	PB0	GPIO_Output	I1
+27	PB1	GPIO_Output	I2
+28	PB2	GPIO_Output	I3
+30	PB11	GPIO_Output	_/WP
+33	PB12	GPIO_Output	Flash_CS
+34	PB13*	SPI2_SCK	Flash_SCK
+35	PB14*	SPI2_MISO	Flash_MISO
+36	PB15*	SPI2_MOSI	Flash_MOSI
+41	PA8	GPIO_EXTI8	Ethernet_INTn
+42	PA9*	I2C1_SCL	
+43	PA10*	I2C1_SDA	
+44	PA11	GPIO_Output	Digipot_SHDN#
+45	PA12	GPIO_Output	CD_Gate
+46	PA13	SYS_SWDIO	
+49	PA14	SYS_SWCLK	
+55	PB3	GPIO_Output	R1
+56	PB4	GPIO_Output	R2
+57	PB5	GPIO_Output	R3
+58	PB6	GPIO_Output	R
+59	PB7	GPIO_Output	E_PM2
+61	PB8	GPIO_Output	E_PM1
+62	PB9	GPIO_Output	E_PM0
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN3	ADC_IN3	PA3
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+14	PA0	GPIO_Output	PreAmp_Out
+15	PA1	GPIO_Output	ADC_Select
+17	PA3	ADC_IN3	Temp_2
+20	PA4	GPIO_Output	Ethernet_CE
+21	PA5*	SPI1_SCK	Ethernet_SCLK
+22	PA6*	SPI1_MISO	Ethernet_MISO
+23	PA7*	SPI1_MOSI	Ethernet_MOSI
+26	PB0	GPIO_Output	I1
+27	PB1	GPIO_Output	I2
+28	PB2	GPIO_Output	I3
+30	PB11	GPIO_Output	_/WP
+33	PB12	GPIO_Output	Flash_CS
+34	PB13*	SPI2_SCK	Flash_SCK
+35	PB14*	SPI2_MISO	Flash_MISO
+36	PB15*	SPI2_MOSI	Flash_MOSI
+41	PA8	GPIO_EXTI8	Ethernet_INTn
+42	PA9*	I2C1_SCL	
+43	PA10*	I2C1_SDA	
+44	PA11	GPIO_Output	Digipot_SHDN#
+45	PA12	GPIO_Output	CD_Gate
+46	PA13	SYS_SWDIO	
+49	PA14	SYS_SWCLK	
+55	PB3	GPIO_Output	R1
+56	PB4	GPIO_Output	R2
+57	PB5	GPIO_Output	R3
+58	PB6	GPIO_Output	R
+59	PB7	GPIO_Output	E_PM2
+61	PB8	GPIO_Output	E_PM1
+62	PB9	GPIO_Output	E_PM0
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : L07_MCU
+Project Folder : C:\Users\Shrek\STM32CubeIDE\workspace_1.19.0\L07_MCU
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_L0 V1.12.3
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
