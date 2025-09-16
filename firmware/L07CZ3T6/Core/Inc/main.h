@@ -59,8 +59,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define PreAmp_Out_Pin GPIO_PIN_0
 #define PreAmp_Out_GPIO_Port GPIOA
-#define ADC_Select_Pin GPIO_PIN_1
-#define ADC_Select_GPIO_Port GPIOA
 #define Temp_2_Pin GPIO_PIN_3
 #define Temp_2_GPIO_Port GPIOA
 #define Ethernet_CE_Pin GPIO_PIN_4

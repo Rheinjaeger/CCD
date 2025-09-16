@@ -52,8 +52,9 @@ class CCDGUI:
             ("Capture Image", self.capture_image),
             ("Transmit Images", self.transmit_images),
             ("Reset System", self.reset_system),
-            ("Clear Memory", self.clear_memory),
+            ("Clear Flash Memory", self.clear_memory),
             ("Ping", self.ping_device),
+            #("Reset CCD sensor, self.reset_CCD")
         ]
 
         for text, cmd in button_specs:
@@ -118,6 +119,9 @@ class CCDGUI:
 
     def clear_memory(self):
         self.log_message("Flash memory on system cleared.")
+
+    def reset_CCD(self):
+        self.log_message("CCD reset")
 
     def ping_device(self):
         self.log_message("Pinging PCB...")
