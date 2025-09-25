@@ -1,0 +1,10 @@
+../Core/Src/main.c:85:5:main	8	static
+../Core/Src/main.c:135:6:SystemClock_Config	96	static
+../Core/Src/main.c:179:13:MX_ADC_Init	16	static
+../Core/Src/main.c:251:13:MX_IWDG_Init	8	static
+../Core/Src/main.c:280:13:MX_SPI2_Init	8	static
+../Core/Src/main.c:318:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:371:6:ad_dataflush	8	static
+../Core/Src/main.c:385:6:bsp_RunPer1ms	8	static
+../Core/Src/main.c:400:6:bsp_RunPer10ms	8	static
+../Core/Src/main.c:417:6:Error_Handler	8	static,ignoring_inline_asm
