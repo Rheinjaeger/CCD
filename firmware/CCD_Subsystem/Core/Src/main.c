@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "system_controller.h"
+#include "w5500.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -116,6 +118,7 @@ int main(void)
   /* USER CODE END 2 */
   //W5500HardwareInitilize;
   init_chip();
+  System_Init();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -125,6 +128,7 @@ int main(void)
 
 
 	  HAL_IWDG_Refresh(&hiwdg); // Feed the watchdog: reload watchdog counter with 4095
+	  system_loop();
 
     /* USER CODE BEGIN 3 */
   }

@@ -54,7 +54,7 @@ class CCDGUI:
             ("Reset System", self.reset_system),
             ("Clear Flash Memory", self.clear_memory),
             ("Ping", self.ping_device),
-            #("Reset CCD sensor, self.reset_CCD")
+            ("Reset CCD sensor", self.reset_CCD)
         ]
 
         for text, cmd in button_specs:
