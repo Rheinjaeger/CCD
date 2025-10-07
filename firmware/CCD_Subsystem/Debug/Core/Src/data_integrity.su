@@ -1,0 +1,5 @@
+../Core/Src/data_integrity.c:10:10:calc_checksum	24	static
+../Core/Src/data_integrity.c:18:6:verify_checksum	24	static
+../Core/Src/data_integrity.c:22:6:error_capturing_image	16	static
+../Core/Src/data_integrity.c:26:6:error_accessing_buffer	16	static
+../Core/Src/data_integrity.c:30:6:error_receiving_feedback	16	static

@@ -1,0 +1,3 @@
+../Core/Src/CCD_Module.c:37:6:CCD_Module_Init	32	static
+../Core/Src/CCD_Module.c:58:6:CCD_StartCapture	16	static
+../Core/Src/CCD_Module.c:95:6:CCD_StopCapture	8	static

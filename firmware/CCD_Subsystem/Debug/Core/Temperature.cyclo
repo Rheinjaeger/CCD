@@ -1,5 +1,0 @@
-../Core/Temperature.c:74:15:FndTempVal	4
-../Core/Temperature.c:92:17:ADC_GetData	2
-../Core/Temperature.c:113:17:ADC1_GetData	1
-../Core/Temperature.c:133:8:GetNTCTempVal	1
-../Core/Temperature.c:155:6:GetTMP20ATempVal	1

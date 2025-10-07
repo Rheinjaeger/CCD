@@ -8,6 +8,9 @@
 #ifndef W5500_H_
 #define W5500_H_
 
+#include <stdint.h>
+#include <stm32l0xx_hal.h>
+
 /*
         PA4 = CS
         PA5 = SCK

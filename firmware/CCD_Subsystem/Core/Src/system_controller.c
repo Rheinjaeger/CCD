@@ -12,19 +12,30 @@
 #include <string.h>
 #include <stdio.h>
 
-void System_Init(void) {
+void System_Init(SystemController *ctrl) {
     // Init Ethernet
-    init_chip();
-    printf("System: W5500 Initialized.\n");
+    ctrl->capture = placeholder_capture;
+    ctrl->transmit = placeholder_transmit;
+    ctrl->reset_system = placeholder_reset;
+    ctrl->set_idle = placeholder_set_idle;
+}
+
+void placeholder_capture(void) {
+	printf("Placeholder: Capture()\n");
+}
+
+void placeholder_transmit(void) {
+	printf("Placeholder: Capture()\n");
+}
+
+void placeholder_reset(void) {
+	printf("Placeholder: Capture()\n");
+}
+
+void placeholder_set_idle(void) {
+	printf("Placeholder: Capture()\n");
 }
 
 void System_Loop(void) {
-    uint8_t buffer[128];
-
-    // Wait for data and Echo
-    uint16_t len = W5500_Receive(buffer, sizeof(buffer));
-    if (len > 0) {
-        printf("Received %d bytes: %s\n", len, buffer);
-        W5500_Send(buffer, len); // echo
-    }
+	printf("Did is da Systemn loop; Cody is so hot!");
 }

@@ -1,0 +1,5 @@
+../Core/Src/Temperature.c:74:15:FndTempVal	24	static
+../Core/Src/Temperature.c:92:17:ADC_GetData	32	static
+../Core/Src/Temperature.c:113:17:ADC1_GetData	32	static
+../Core/Src/Temperature.c:133:8:GetNTCTempVal	24	static
+../Core/Src/Temperature.c:155:6:GetTMP20ATempVal	24	static

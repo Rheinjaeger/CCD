@@ -12,7 +12,6 @@ RM := rm -rf
 -include Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
--include Core/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -61,8 +60,8 @@ all: main-build
 main-build: CCD_Subsystem.elf secondary-outputs
 
 # Tool invocations
-CCD_Subsystem.elf CCD_Subsystem.map: $(OBJS) $(USER_OBJS) E:\STMicroelectronics\Project\CCD_Subsystem\STM32L073CZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "CCD_Subsystem.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"E:\STMicroelectronics\Project\CCD_Subsystem\STM32L073CZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CCD_Subsystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+CCD_Subsystem.elf CCD_Subsystem.map: $(OBJS) $(USER_OBJS) C:\Users\Shrek\OneDrive\Documents\Spring_2025\ECE\ 4805\ (Senior\ Design)\CCD\CCD\firmware\CCD_Subsystem\STM32L073CZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "CCD_Subsystem.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Shrek\OneDrive\Documents\Spring_2025\ECE 4805 (Senior Design)\CCD\CCD\firmware\CCD_Subsystem\STM32L073CZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CCD_Subsystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

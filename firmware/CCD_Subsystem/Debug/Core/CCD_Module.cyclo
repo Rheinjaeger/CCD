@@ -1,3 +1,0 @@
-../Core/CCD_Module.c:33:6:CCD_Module_Init	1
-../Core/CCD_Module.c:54:6:CCD_StartCapture	2
-../Core/CCD_Module.c:91:6:CCD_StopCapture	1

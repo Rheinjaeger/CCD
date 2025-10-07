@@ -1,4 +1,5 @@
-Core/CCD_Module.o: ../Core/CCD_Module.c \
+Core/Src/system_controller.o: ../Core/Src/system_controller.c \
+ ../Core/Inc/system_controller.h ../Core/Inc/w5500.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h \
  ../Core/Inc/stm32l0xx_hal_conf.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h \
@@ -27,6 +28,8 @@ Core/CCD_Module.o: ../Core/CCD_Module.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h
+../Core/Inc/system_controller.h:
+../Core/Inc/w5500.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h:

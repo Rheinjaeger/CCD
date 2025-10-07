@@ -1,4 +1,4 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Src/Temperature.o: ../Core/Src/Temperature.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h \
  ../Core/Inc/stm32l0xx_hal_conf.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h \
@@ -26,10 +26,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_iwdg.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
- ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h \
- ../Core/Inc/bsp_timer.h ../Core/Inc/W25Qxx.h ../Core/Inc/W5500.h \
- ../Core/Inc/system_controller.h ../Core/Inc/w5500.h
-../Core/Inc/main.h:
+ ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h:
@@ -58,8 +55,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h:
-../Core/Inc/bsp_timer.h:
-../Core/Inc/W25Qxx.h:
-../Core/Inc/W5500.h:
-../Core/Inc/system_controller.h:
-../Core/Inc/w5500.h:

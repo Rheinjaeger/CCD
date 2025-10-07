@@ -18,7 +18,7 @@ uint8_t BSP_W25Qx_Init(void)
 }
 
 
-static void	BSP_W25Qx_Reset(void)
+void BSP_W25Qx_Reset(void)
 {
 	uint8_t cmd[2] = {RESET_ENABLE_CMD,RESET_MEMORY_CMD};
 
@@ -33,7 +33,7 @@ static void	BSP_W25Qx_Reset(void)
   * Function: Get device status
   */
 
-static uint8_t BSP_W25Qx_GetStatus(void)
+uint8_t BSP_W25Qx_GetStatus(void)
 {
 	uint8_t cmd[] = {READ_STATUS_REG1_CMD};
 	uint8_t status;
@@ -73,13 +73,11 @@ uint8_t BSP_W25Qx_WriteEnable(void)
 	W25Qx_Disable();
 
 	/* Wait the end of Flash writing */
-	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
-	{
+	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY){
 		/* Check for the Timeout */
-    if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
-    {
+		if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE){
 			return W25Qx_TIMEOUT;
-    }
+		}
 	}
 
 	return W25Qx_OK;
@@ -185,11 +183,9 @@ uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
     }
 			W25Qx_Disable();
     	/* Wait the end of Flash writing */
-		while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
-		{
+		while(BSP_W25Qx_GetStatus() == W25Qx_BUSY){
 			/* Check for the Timeout */
-			if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
-			{
+			if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE){
 				return W25Qx_TIMEOUT;
 			}
 		}
@@ -229,13 +225,11 @@ uint8_t BSP_W25Qx_Erase_Sector(uint32_t Address)
 	W25Qx_Disable();
 
 	/* Wait the end of Flash writing */
-	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
-	{
+	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY){
 		/* Check for the Timeout */
-    if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME)
-    {
+		if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME){
 			return W25Qx_TIMEOUT;
-    }
+		}
 	}
 	return W25Qx_OK;
 }
@@ -265,13 +259,11 @@ uint8_t BSP_W25Qx_Erase_Block(uint32_t Address)
 	W25Qx_Disable();
 
 	/* Wait the end of Flash writing */
-	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
-	{
+	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY){
 		/* Check for the Timeout */
-    if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME)
-    {
+		if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME){
 			return W25Qx_TIMEOUT;
-    }
+		}
 	}
 	return W25Qx_OK;
 }
@@ -297,13 +289,11 @@ uint8_t BSP_W25Qx_Erase_Chip(void)
 	W25Qx_Disable();
 
 	/* Wait the end of Flash writing */
-	while(BSP_W25Qx_GetStatus() != W25Qx_BUSY);
-	{
+	while(BSP_W25Qx_GetStatus() == W25Qx_BUSY){
 		/* Check for the Timeout */
-    if((HAL_GetTick() - tickstart) > W25Q128FV_BULK_ERASE_MAX_TIME)
-    {
-			return W25Qx_TIMEOUT;
-    }
+		if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME){
+				return W25Qx_TIMEOUT;
+		}
 	}
 	return W25Qx_OK;
 }
