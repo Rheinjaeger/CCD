@@ -118,6 +118,10 @@ int main(void)
   /* USER CODE END 2 */
   //W5500HardwareInitilize;
   init_chip();
+  Socket0_Config(6000);
+
+  Write_W5500_SOCK_Byte(0,  Sn_MR, MR_UDP); // UDP mode
+  Write_W5500_SOCK_Byte(0, Sn_CR, OPEN);
   SystemController system_ctrl;
   System_Init(&system_ctrl);
   /* Infinite loop */

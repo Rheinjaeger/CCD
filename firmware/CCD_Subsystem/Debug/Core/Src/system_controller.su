@@ -1,6 +1,6 @@
-../Core/Src/system_controller.c:15:6:System_Init	16	static
-../Core/Src/system_controller.c:23:6:placeholder_capture	8	static
-../Core/Src/system_controller.c:27:6:placeholder_transmit	8	static
-../Core/Src/system_controller.c:31:6:placeholder_reset	8	static
-../Core/Src/system_controller.c:35:6:placeholder_set_idle	8	static
-../Core/Src/system_controller.c:39:6:System_Loop	8	static
+../Core/Src/system_controller.c:17:6:System_Init	16	static
+../Core/Src/system_controller.c:25:6:placeholder_capture	8	static
+../Core/Src/system_controller.c:29:6:placeholder_transmit	8	static
+../Core/Src/system_controller.c:33:6:placeholder_reset	8	static
+../Core/Src/system_controller.c:37:6:placeholder_set_idle	8	static
+../Core/Src/system_controller.c:41:6:System_Loop	24	static

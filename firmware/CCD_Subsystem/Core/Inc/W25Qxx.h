@@ -91,8 +91,8 @@
 
 
 uint8_t BSP_W25Qx_Init(void);
-static void	BSP_W25Qx_Reset(void);
-static uint8_t BSP_W25Qx_GetStatus(void);
+void	BSP_W25Qx_Reset(void);
+uint8_t BSP_W25Qx_GetStatus(void);
 uint8_t BSP_W25Qx_WriteEnable(void);
 void BSP_W25Qx_Read_ID(uint8_t *ID);
 uint8_t BSP_W25Qx_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size);

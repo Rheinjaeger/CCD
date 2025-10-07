@@ -11,6 +11,21 @@
 #include <stdint.h>
 #include <stm32l0xx_hal.h>
 
+// Socket Register Offsets (needed for socket commands)
+#define Sn_MR    0x0000
+#define Sn_CR    0x0001
+#define Sn_IR    0x0002
+
+// Socket Command Values
+#define OPEN     0x01
+
+// Protocol Modes
+#define MR_UDP   0x02
+
+// Interrupt Flags
+#define IR_RECV  0x04
+
+
 /*
         PA4 = CS
         PA5 = SCK
