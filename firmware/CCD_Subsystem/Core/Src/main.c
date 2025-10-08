@@ -118,7 +118,10 @@ int main(void)
   /* USER CODE END 2 */
   //W5500HardwareInitilize;
   init_chip();
+  Load_Net_Parameters();
   Socket0_Config(6000);
+  unsigned char port = 6000;
+  Socket_Listen(port);
 
   Write_W5500_SOCK_Byte(0,  Sn_MR, MR_UDP); // UDP mode
   Write_W5500_SOCK_Byte(0, Sn_CR, OPEN);
@@ -132,8 +135,9 @@ int main(void)
 	  //ad_dataflush();
 
 
-	  HAL_IWDG_Refresh(&hiwdg); // Feed the watchdog: reload watchdog counter with 4095
+	  HAL_IWDG_Refresh(&hiwdg); // Feed the watchdog: reload watchdog counter with
 	  System_Loop();
+	  printf("Cody is hot!");
 
     /* USER CODE BEGIN 3 */
   }

@@ -740,10 +740,12 @@ void W5500HardwareReset(void)
 //
 void Load_Net_Parameters(void)
 {
-    Gateway_IP[0] = 192; // Load gateway parameters
-    Gateway_IP[1] = 168;
-    Gateway_IP[2] = 1;
-    Gateway_IP[3] = 1;
+    Gateway_IP[0] = 172; // Load gateway parameters
+    Gateway_IP[1] = 21;
+    Gateway_IP[2] = 96;
+    Gateway_IP[3] = 2;
+
+    //172.21.96.1
 
     Sub_Mask[0] = 255;   // Load subnet mask
     Sub_Mask[1] = 255;
@@ -757,16 +759,16 @@ void Load_Net_Parameters(void)
     Phy_Addr[4] = 0x00;
     Phy_Addr[5] = 0x01;
 
-    IP_Addr[0] = 192;    // Load local IP address
-    IP_Addr[1] = 168;
-    IP_Addr[2] = 1;
-    IP_Addr[3] = 199;
+    IP_Addr[0] = 172;    // Load local IP address
+    IP_Addr[1] = 21;
+    IP_Addr[2] = 96;
+    IP_Addr[3] = 2;
 
     // Load destination IP for socket 0 (e.g., a PC for debugging)
-    UDP_DIPR[0] = 192;
-    UDP_DIPR[1] = 168;
-    UDP_DIPR[2] = 1;
-    UDP_DIPR[3] = 188;
+    UDP_DIPR[0] = 172;
+    UDP_DIPR[1] = 21;
+    UDP_DIPR[2] = 96;
+    UDP_DIPR[3] = 2;
     // Load destination port for socket 0 (e.g., a PC for debugging), 6000
     UDP_DPORT[0] = 0x17;
     UDP_DPORT[1] = 0x70;
