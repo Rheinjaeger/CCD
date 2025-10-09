@@ -1,5 +1,5 @@
 Core/Src/system_controller.o: ../Core/Src/system_controller.c \
- ../Core/Inc/system_controller.h ../Core/Inc/w5500.h \
+ ../Core/Inc/system_controller.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h \
  ../Core/Inc/stm32l0xx_hal_conf.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h \
@@ -27,9 +27,14 @@ Core/Src/system_controller.o: ../Core/Src/system_controller.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_iwdg.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
- ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h
+ ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/./W6300/w6300.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/../Application/Application.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h \
+ ../Core/Inc/w5500_port.h
 ../Core/Inc/system_controller.h:
-../Core/Inc/w5500.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h:
@@ -58,3 +63,9 @@ Core/Src/system_controller.o: ../Core/Src/system_controller.c \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/./W6300/w6300.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/../Application/Application.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h:
+../Core/Inc/w5500_port.h:

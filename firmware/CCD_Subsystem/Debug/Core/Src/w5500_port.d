@@ -1,4 +1,4 @@
-Core/Src/W5500.o: ../Core/Src/W5500.c \
+Core/Src/w5500_port.o: ../Core/Src/w5500_port.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h \
  ../Core/Inc/stm32l0xx_hal_conf.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h \
@@ -27,7 +27,10 @@ Core/Src/W5500.o: ../Core/Src/W5500.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h \
- ../Core/Inc/bsp_timer.h
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/./W6300/w6300.h \
+ C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/../Application/Application.h \
+ ../Core/Inc/w5500_port.h
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h:
@@ -56,4 +59,7 @@ Core/Src/W5500.o: ../Core/Src/W5500.c \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h:
-../Core/Inc/bsp_timer.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/./W6300/w6300.h:
+C:/Users/Shrek/OneDrive/Documents/Spring_2025/ECE\ 4805\ (Senior\ Design)/CCD/CCD/firmware/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/../Application/Application.h:
+../Core/Inc/w5500_port.h:

@@ -19,7 +19,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "system_controller.h"
-#include "w5500.h"
+#include "wizchip_conf.h"
+#include "socket.h"
+#include <stdio.h>
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -117,13 +120,22 @@ int main(void)
   BSP_W25Qx_Init();
   /* USER CODE END 2 */
   //W5500HardwareInitilize;
-  init_chip();
-  Socket0_Config(6000);
+  W5500_LowLevelInit();   // new init function using ioLibrary
 
-  Write_W5500_SOCK_Byte(0,  Sn_MR, MR_UDP); // UDP mode
-  Write_W5500_SOCK_Byte(0, Sn_CR, OPEN);
+
   SystemController system_ctrl;
   System_Init(&system_ctrl);
+
+  // --- Open socket (start UDP server setup) ---
+    SOCKET s = 0;
+    uint16_t port = 6000;
+
+    if (socket(s, Sn_MR_UDP, port, 0) != s) {
+        printf("Socket open failed!\n");
+    } else {
+        printf("UDP Server ready on port %d\n", port);
+    }
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -131,9 +143,8 @@ int main(void)
     /* USER CODE END WHILE */
 	  //ad_dataflush();
 
-
+	  UDP_Echo_Server();
 	  HAL_IWDG_Refresh(&hiwdg); // Feed the watchdog: reload watchdog counter with 4095
-	  System_Loop();
 
     /* USER CODE BEGIN 3 */
   }

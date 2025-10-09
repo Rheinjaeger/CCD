@@ -25,4 +25,14 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32L0xx_HAL_Driver/Src \
+Drivers/ioLibrary_Driver/Application/loopback \
+Drivers/ioLibrary_Driver/Application/multicast \
+Drivers/ioLibrary_Driver/Ethernet/W5100 \
+Drivers/ioLibrary_Driver/Ethernet/W5100S \
+Drivers/ioLibrary_Driver/Ethernet/W5200 \
+Drivers/ioLibrary_Driver/Ethernet/W5300 \
+Drivers/ioLibrary_Driver/Ethernet/W5500 \
+Drivers/ioLibrary_Driver/Ethernet/W6100 \
+Drivers/ioLibrary_Driver/Ethernet/W6300 \
+Drivers/ioLibrary_Driver/Ethernet \
 
