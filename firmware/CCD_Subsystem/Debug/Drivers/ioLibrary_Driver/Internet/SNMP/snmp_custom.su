@@ -1,0 +1,2 @@
+../Drivers/ioLibrary_Driver/Internet/SNMP/snmp_custom.c:123:6:initTable	8	static
+../Drivers/ioLibrary_Driver/Internet/SNMP/snmp_custom.c:168:6:initial_Trap	216	static
