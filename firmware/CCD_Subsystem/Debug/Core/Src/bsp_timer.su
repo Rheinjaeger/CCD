@@ -12,4 +12,3 @@
 ../Core/Src/bsp_timer.c:349:9:bsp_CheckTimer	16	static
 ../Core/Src/bsp_timer.c:377:9:bsp_GetRunTime	24	static,ignoring_inline_asm
 ../Core/Src/bsp_timer.c:399:9:bsp_CheckRunTime	32	static,ignoring_inline_asm
-../Core/Src/bsp_timer.c:431:6:SysTick_Handler	8	static

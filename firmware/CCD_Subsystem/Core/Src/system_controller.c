@@ -7,9 +7,8 @@
 
 
 #include "system_controller.h"
-#include "wizchip_conf.h"
-#include "socket.h"
 #include "w5500_port.h"
+#include "socket.h"
 #include "stm32l0xx_hal.h"
 #include <string.h>
 #include <stdio.h>

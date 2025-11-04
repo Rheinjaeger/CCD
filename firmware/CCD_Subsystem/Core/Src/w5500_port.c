@@ -1,5 +1,5 @@
 #include "stm32l0xx_hal.h"
-#include "wizchip_conf.h"
+//#include "wizchip_conf.h"
 #include "w5500_port.h"
 
 extern SPI_HandleTypeDef hspi2;  // SPI2 handle from CubeMX

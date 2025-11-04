@@ -9,7 +9,7 @@
 #define INC_W5500_PORT_H_
 
 #include "stm32l0xx_hal.h"
-#include "wizchip_conf.h"
+//#include "wizchip_conf.h"
 
 void W5500_Select(void);
 void W5500_Deselect(void);

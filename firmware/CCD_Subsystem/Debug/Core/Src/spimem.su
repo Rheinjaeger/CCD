@@ -1,0 +1,15 @@
+../Core/Src/spimem.c:320:5:nand_spi_cs_ctrl	16	static
+../Core/Src/spimem.c:330:12:nand_spi_pin_init	32	static
+../Core/Src/spimem.c:370:12:nand_spi_init	8	static
+../Core/Src/spimem.c:408:5:w25n01gv_spi_hard_init	8	static
+../Core/Src/spimem.c:422:16:spi_send_byte	40	static
+../Core/Src/spimem.c:433:16:spi_read_byte	8	static
+../Core/Src/spimem.c:438:12:spi_tx_with_format	32	static
+../Core/Src/spimem.c:463:12:spi_rx_with_format	32	static
+../Core/Src/spimem.c:493:5:board_w25n01gv_spi_tx_interface	24	static
+../Core/Src/spimem.c:527:5:board_w25n01gv_spi_tx_rx_interface	32	static
+../Core/Src/spimem.c:570:5:board_w25n01gv_delay_us	24	static
+../Core/Src/spimem.c:582:7:board_w25n01gv_malloc	16	static
+../Core/Src/spimem.c:588:6:board_w25n01gv_free	16	static
+../Core/Src/spimem.c:594:6:board_w25n01gv_memcpy	24	static
+../Core/Src/spimem.c:599:5:board_w25n01gv_init	32	static

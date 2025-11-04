@@ -9,8 +9,8 @@
 #define INC_SYSTEM_CONTROLLER_H_
 
 #include "stm32l0xx_hal.h"
-#include "wizchip_conf.h"
-#include "socket.h"
+//#include "wizchip_conf.h"
+//#include "socket.h"
 
 // --- Data Structures ---
 typedef struct {

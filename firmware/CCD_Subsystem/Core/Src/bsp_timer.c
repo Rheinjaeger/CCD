@@ -428,17 +428,19 @@ int32_t bsp_CheckRunTime(int32_t _LastTime)
 *   Return Value : None
 *********************************************************************************************************
 */
+/*
 void SysTick_Handler(void)
 {
-    HAL_IncTick();  /* ST HAL library SysTick interrupt service routine */
+    HAL_IncTick();
 
     if (g_ucEnableSystickISR == 0)
     {
         return;
     }
 
-    SysTick_ISR();  /* AnFuLai BSP library SysTick interrupt service routine */
+    SysTick_ISR();
 }
+*/
 
 
 

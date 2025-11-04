@@ -9,26 +9,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include Drivers/ioLibrary_Driver/Internet/httpServer/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/TFTP/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/SNTP/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/SNMP/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/MQTT/MQTTPacket/src/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/MQTT/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/DNS/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/DHCP6/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/DHCP/subdir.mk
--include Drivers/ioLibrary_Driver/Internet/AAC/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W6300/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W6100/subdir.mk
 -include Drivers/ioLibrary_Driver/Ethernet/W5500/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W5300/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W5200/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W5100S/subdir.mk
--include Drivers/ioLibrary_Driver/Ethernet/W5100/subdir.mk
 -include Drivers/ioLibrary_Driver/Ethernet/subdir.mk
--include Drivers/ioLibrary_Driver/Application/multicast/subdir.mk
--include Drivers/ioLibrary_Driver/Application/loopback/subdir.mk
 -include Drivers/STM32L0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -80,8 +62,8 @@ all: main-build
 main-build: CCD_Subsystem.elf secondary-outputs
 
 # Tool invocations
-CCD_Subsystem.elf CCD_Subsystem.map: $(OBJS) $(USER_OBJS) C:\Users\torre\Documents\Spring_2025\real_ccd\CCD\firmware\CCD_Subsystem\STM32L073CZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "CCD_Subsystem.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\torre\Documents\Spring_2025\real_ccd\CCD\firmware\CCD_Subsystem\STM32L073CZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CCD_Subsystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+CCD_Subsystem.elf CCD_Subsystem.map: $(OBJS) $(USER_OBJS) C:\Users\Shrek\OneDrive\Documents\Fall_2025\CCD_Subsystem\STM32L073CZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "CCD_Subsystem.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Shrek\OneDrive\Documents\Fall_2025\CCD_Subsystem\STM32L073CZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CCD_Subsystem.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

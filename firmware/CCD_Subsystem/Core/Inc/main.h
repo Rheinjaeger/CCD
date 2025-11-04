@@ -32,8 +32,8 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_timer.h"
-#include "W25Qxx.h"
-#include "W5500.h"
+#include "spimem.h"
+//#include "W5500.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -63,8 +63,6 @@ void Error_Handler(void);
 #define PreAmp_Out_GPIO_Port GPIOA
 #define ADC_Select_Pin GPIO_PIN_1
 #define ADC_Select_GPIO_Port GPIOA
-#define Temp_1_Pin GPIO_PIN_2
-#define Temp_1_GPIO_Port GPIOA
 #define Temp_2_Pin GPIO_PIN_3
 #define Temp_2_GPIO_Port GPIOA
 #define Ethernet_CE_Pin GPIO_PIN_4
@@ -81,6 +79,8 @@ void Error_Handler(void);
 #define CCD_I2_GPIO_Port GPIOB
 #define CCD_I3_Pin GPIO_PIN_2
 #define CCD_I3_GPIO_Port GPIOB
+#define Ethernet_RST_Pin GPIO_PIN_10
+#define Ethernet_RST_GPIO_Port GPIOB
 #define FLASH_WP_Pin GPIO_PIN_11
 #define FLASH_WP_GPIO_Port GPIOB
 #define FLASH_CS_Pin GPIO_PIN_12
@@ -93,14 +93,10 @@ void Error_Handler(void);
 #define FLASH_MOSI_GPIO_Port GPIOB
 #define Ethernet_INT_Pin GPIO_PIN_8
 #define Ethernet_INT_GPIO_Port GPIOA
-#define Ethernet_RST_Pin GPIO_PIN_9
-#define Ethernet_RST_GPIO_Port GPIOA
-#define E_PM0_Pin GPIO_PIN_10
-#define E_PM0_GPIO_Port GPIOA
-#define E_PM1_Pin GPIO_PIN_11
-#define E_PM1_GPIO_Port GPIOA
-#define E_PM2_Pin GPIO_PIN_12
-#define E_PM2_GPIO_Port GPIOA
+#define Digipot_SHDN__Pin GPIO_PIN_11
+#define Digipot_SHDN__GPIO_Port GPIOA
+#define CD_Gate_Pin GPIO_PIN_12
+#define CD_Gate_GPIO_Port GPIOA
 #define CCD_R1_Pin GPIO_PIN_3
 #define CCD_R1_GPIO_Port GPIOB
 #define CCD_R2_Pin GPIO_PIN_4
@@ -109,8 +105,6 @@ void Error_Handler(void);
 #define CCD_R3_GPIO_Port GPIOB
 #define CCD_R_Pin GPIO_PIN_6
 #define CCD_R_GPIO_Port GPIOB
-#define LED_Pin GPIO_PIN_7
-#define LED_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
