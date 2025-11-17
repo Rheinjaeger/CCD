@@ -31,7 +31,7 @@ wiz_NetInfo gWIZNETINFO = {
 // --- W5500 Initialization ---
 void W5500_LowLevelInit(void)
 {
-    // Register SPI and CS callbacks (defined in w5500_port.c)
+    // Register SPI and CS callbacks
     reg_wizchip_cs_cbfunc(W5500_Select, W5500_Deselect);
     reg_wizchip_spi_cbfunc(W5500_ReadByte, W5500_WriteByte);
     reg_wizchip_spiburst_cbfunc(W5500_ReadBurst, W5500_WriteBurst);
@@ -71,7 +71,7 @@ void System_Init(SystemController *ctrl)
     // Initialize W5500 hardware interface
     W5500_LowLevelInit();  // configure SPI callbacks and PHY reset
 
-    // Configure W5500 network parameters (static IP for now)
+    // Configure W5500 network parameters
     wiz_NetInfo netInfo = {
         .mac  = {0x00, 0x08, 0xDC, 0x12, 0x34, 0x56},
         .ip   = {192, 168, 56, 2},   // your board IP

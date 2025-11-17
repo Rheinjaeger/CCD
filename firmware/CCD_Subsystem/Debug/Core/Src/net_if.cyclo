@@ -1,0 +1,4 @@
+../Core/Inc/w5500_port.h:15:20:W5500_Select	1
+../Core/Inc/w5500_port.h:16:20:W5500_Deselect	1
+../Core/Src/net_if.c:14:13:wizchip_spi_attach	1
+../Core/Src/net_if.c:20:6:NET_Init	2

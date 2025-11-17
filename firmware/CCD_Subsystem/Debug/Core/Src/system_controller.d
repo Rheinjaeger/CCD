@@ -32,9 +32,11 @@ Core/Src/system_controller.o: ../Core/Src/system_controller.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h \
  ../Core/Inc/w5500_port.h \
- C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h \
  C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h \
  C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/W5500/w5500.h \
+ ../Core/Inc/main.h ../Core/Inc/bsp_timer.h ../Core/Inc/spimem.h \
+ ../Core/Inc/w25n01gvzeig.h \
+ C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h \
  C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h
 ../Core/Inc/system_controller.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
@@ -69,7 +71,11 @@ Core/Src/system_controller.o: ../Core/Src/system_controller.c \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_spi.h:
 ../Core/Inc/w5500_port.h:
-C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h:
 C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h:
 C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/W5500/w5500.h:
+../Core/Inc/main.h:
+../Core/Inc/bsp_timer.h:
+../Core/Inc/spimem.h:
+../Core/Inc/w25n01gvzeig.h:
+C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/socket.h:
 C:/Users/Shrek/OneDrive/Documents/Fall_2025/CCD_Subsystem/Drivers/ioLibrary_Driver/Ethernet/wizchip_conf.h:

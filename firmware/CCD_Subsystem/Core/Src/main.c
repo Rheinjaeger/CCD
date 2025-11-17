@@ -16,30 +16,30 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+/* Includes */
 #include "main.h"
-
-/* Private includes ----------------------------------------------------------*/
+#include "net_if.h"
+/* Private includes */
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Private typedef -----------------------------------------------------------*/
+/* Private typedef */
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
 
-/* Private define ------------------------------------------------------------*/
+/* Private define */
 /* USER CODE BEGIN PD */
 
 /* USER CODE END PD */
 
-/* Private macro -------------------------------------------------------------*/
+/* Private macro */
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
 
-/* Private variables ---------------------------------------------------------*/
+/* Private variables */
 ADC_HandleTypeDef hadc;
 
 I2C_HandleTypeDef hi2c1;
@@ -82,26 +82,19 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
 
-  /* GPIO init (only this is required for the toggle test) */
+  /* GPIO init */
   MX_GPIO_Init();
+  MX_SPI2_Init();
 
-  /* If you left the watchdog enabled in .ioc, either:
-     - comment out MX_IWDG_Init() so it’s not started, OR
-     - call HAL_IWDG_Refresh(&hiwdg) periodically in the loop
-     MX_IWDG_Init();
-  */
-
-  /* Optional: start from a known level */
+  /* GPIO Reset of CCD_R_PIN */
   HAL_GPIO_WritePin(GPIOB, CCD_R_Pin, GPIO_PIN_RESET);
+
+  NET_Init();
 
   while (1)
   {
-    HAL_GPIO_TogglePin(GPIOB, CCD_R_Pin);  // <--- CHANGE pin here if you want
-    HAL_Delay(2000);                         // 500 ms -> 1 Hz blink
-
-    /* If watchdog is enabled, refresh it here:
-       // HAL_IWDG_Refresh(&hiwdg);
-    */
+    HAL_GPIO_TogglePin(GPIOB, CCD_R_Pin);
+    HAL_Delay(1000);
   }
 }
 

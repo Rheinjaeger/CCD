@@ -11,6 +11,7 @@ C_SRCS += \
 ../Core/Src/command_handler.c \
 ../Core/Src/data_integrity.c \
 ../Core/Src/main.c \
+../Core/Src/net_if.c \
 ../Core/Src/spimem.c \
 ../Core/Src/stm32l0xx_hal_msp.c \
 ../Core/Src/stm32l0xx_it.c \
@@ -28,6 +29,7 @@ OBJS += \
 ./Core/Src/command_handler.o \
 ./Core/Src/data_integrity.o \
 ./Core/Src/main.o \
+./Core/Src/net_if.o \
 ./Core/Src/spimem.o \
 ./Core/Src/stm32l0xx_hal_msp.o \
 ./Core/Src/stm32l0xx_it.o \
@@ -45,6 +47,7 @@ C_DEPS += \
 ./Core/Src/command_handler.d \
 ./Core/Src/data_integrity.d \
 ./Core/Src/main.d \
+./Core/Src/net_if.d \
 ./Core/Src/spimem.d \
 ./Core/Src/stm32l0xx_hal_msp.d \
 ./Core/Src/stm32l0xx_it.d \
@@ -63,7 +66,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/CCD_Module.cyclo ./Core/Src/CCD_Module.d ./Core/Src/CCD_Module.o ./Core/Src/CCD_Module.su ./Core/Src/Temperature.cyclo ./Core/Src/Temperature.d ./Core/Src/Temperature.o ./Core/Src/Temperature.su ./Core/Src/bsp_timer.cyclo ./Core/Src/bsp_timer.d ./Core/Src/bsp_timer.o ./Core/Src/bsp_timer.su ./Core/Src/command_handler.cyclo ./Core/Src/command_handler.d ./Core/Src/command_handler.o ./Core/Src/command_handler.su ./Core/Src/data_integrity.cyclo ./Core/Src/data_integrity.d ./Core/Src/data_integrity.o ./Core/Src/data_integrity.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/spimem.cyclo ./Core/Src/spimem.d ./Core/Src/spimem.o ./Core/Src/spimem.su ./Core/Src/stm32l0xx_hal_msp.cyclo ./Core/Src/stm32l0xx_hal_msp.d ./Core/Src/stm32l0xx_hal_msp.o ./Core/Src/stm32l0xx_hal_msp.su ./Core/Src/stm32l0xx_it.cyclo ./Core/Src/stm32l0xx_it.d ./Core/Src/stm32l0xx_it.o ./Core/Src/stm32l0xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_controller.cyclo ./Core/Src/system_controller.d ./Core/Src/system_controller.o ./Core/Src/system_controller.su ./Core/Src/system_stm32l0xx.cyclo ./Core/Src/system_stm32l0xx.d ./Core/Src/system_stm32l0xx.o ./Core/Src/system_stm32l0xx.su ./Core/Src/w25n01gvzeig.cyclo ./Core/Src/w25n01gvzeig.d ./Core/Src/w25n01gvzeig.o ./Core/Src/w25n01gvzeig.su ./Core/Src/w5500_port.cyclo ./Core/Src/w5500_port.d ./Core/Src/w5500_port.o ./Core/Src/w5500_port.su
+	-$(RM) ./Core/Src/CCD_Module.cyclo ./Core/Src/CCD_Module.d ./Core/Src/CCD_Module.o ./Core/Src/CCD_Module.su ./Core/Src/Temperature.cyclo ./Core/Src/Temperature.d ./Core/Src/Temperature.o ./Core/Src/Temperature.su ./Core/Src/bsp_timer.cyclo ./Core/Src/bsp_timer.d ./Core/Src/bsp_timer.o ./Core/Src/bsp_timer.su ./Core/Src/command_handler.cyclo ./Core/Src/command_handler.d ./Core/Src/command_handler.o ./Core/Src/command_handler.su ./Core/Src/data_integrity.cyclo ./Core/Src/data_integrity.d ./Core/Src/data_integrity.o ./Core/Src/data_integrity.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/net_if.cyclo ./Core/Src/net_if.d ./Core/Src/net_if.o ./Core/Src/net_if.su ./Core/Src/spimem.cyclo ./Core/Src/spimem.d ./Core/Src/spimem.o ./Core/Src/spimem.su ./Core/Src/stm32l0xx_hal_msp.cyclo ./Core/Src/stm32l0xx_hal_msp.d ./Core/Src/stm32l0xx_hal_msp.o ./Core/Src/stm32l0xx_hal_msp.su ./Core/Src/stm32l0xx_it.cyclo ./Core/Src/stm32l0xx_it.d ./Core/Src/stm32l0xx_it.o ./Core/Src/stm32l0xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_controller.cyclo ./Core/Src/system_controller.d ./Core/Src/system_controller.o ./Core/Src/system_controller.su ./Core/Src/system_stm32l0xx.cyclo ./Core/Src/system_stm32l0xx.d ./Core/Src/system_stm32l0xx.o ./Core/Src/system_stm32l0xx.su ./Core/Src/w25n01gvzeig.cyclo ./Core/Src/w25n01gvzeig.d ./Core/Src/w25n01gvzeig.o ./Core/Src/w25n01gvzeig.su ./Core/Src/w5500_port.cyclo ./Core/Src/w5500_port.d ./Core/Src/w5500_port.o ./Core/Src/w5500_port.su
 
 .PHONY: clean-Core-2f-Src
 

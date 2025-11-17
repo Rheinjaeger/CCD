@@ -1,7 +1,5 @@
-../Core/Src/w5500_port.c:8:6:W5500_Select	1
-../Core/Src/w5500_port.c:11:6:W5500_Deselect	1
-../Core/Src/w5500_port.c:16:9:W5500_ReadByte	1
-../Core/Src/w5500_port.c:21:6:W5500_WriteByte	1
-../Core/Src/w5500_port.c:26:6:W5500_ReadBurst	1
-../Core/Src/w5500_port.c:29:6:W5500_WriteBurst	1
-../Core/Src/w5500_port.c:33:9:getVERSIONR	1
+../Core/Src/w5500_port.c:3:9:W5500_ReadByte	1
+../Core/Src/w5500_port.c:9:6:W5500_WriteByte	1
+../Core/Src/w5500_port.c:13:6:W5500_ReadBurst	2
+../Core/Src/w5500_port.c:17:6:W5500_WriteBurst	1
+../Core/Src/w5500_port.c:21:6:W5500_HardReset	1
